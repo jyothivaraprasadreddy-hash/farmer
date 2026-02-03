@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmer Vegetable Market</title>
+  <style>
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f3f9f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1b5e20;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #2e7d32;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .hero button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero button:hover {
+      background: #1b5e20;
+      transform: translateY(-2px);
+    }
+
+    /* Vegetable Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #2e7d32;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Farmer Services */
+    .services {
+      margin-top: 40px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .services h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .services li {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #1b5e20;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1b5e20;
+      color: #c8e6c9;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Farmer Vegetable Market</h1>
+    <p>Fresh vegetables directly from farmers to consumers</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Vegetables</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Supporting Farmers & Healthy Living</h2>
+      <p>
+        We help farmers sell fresh vegetables directly to customers at fair
+        prices. Eat healthy, support local farmers, and reduce middlemen.
+      </p>
+      <button>View Today's Market</button>
+    </section>
+
+    <!-- Vegetable Cards -->
+    <section class="cards">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" alt="Tomato" />
+        <h3>Tomato</h3>
+        <p>Fresh red tomatoes rich in vitamins and flavor.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Potato_and_cross_section.jpg" alt="Potato" />
+        <h3>Potato</h3>
+        <p>High-quality potatoes grown with natural methods.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/CarrotDiversityLg.jpg" alt="Carrot" />
+        <h3>Carrot</h3>
+        <p>Fresh carrots packed with nutrients and sweetness.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Onion_on_White.JPG" alt="Onion" />
+        <h3>Onion</h3>
+        <p>Strong and fresh onions for daily cooking needs.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Spinach_leaves.jpg" alt="Spinach" />
+        <h3>Spinach</h3>
+        <p>Green leafy spinach for healthy and tasty meals.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_capsicum.jpg" alt="Capsicum" />
+        <h3>Capsicum</h3>
+        <p>Colorful capsicum rich in vitamins and crunch.</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <h2>Farmer Services</h2>
+      <ul>
+        <li>✔ Direct farmer-to-consumer sales</li>
+        <li>✔ Fair pricing and transparent market rates</li>
+        <li>✔ Organic and chemical-free produce options</li>
+        <li>✔ Home delivery support for nearby areas</li>
+        <li>✔ Cold storage and logistics assistance</li>
+        <li>✔ Farmer training and market updates</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 <span>Farmer Vegetable Market</span>. All rights reserved.</p>
+    <p>Empowering farmers • Fresh food • Healthy communities</p>
+  </footer>
+</body>
+</html>
